@@ -16,3 +16,5 @@ var $components = [
     'yixue.layout',
     'yixue.home'
 ];
+
+$dependencies = $dependencies.concat($components);

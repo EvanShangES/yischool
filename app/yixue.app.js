@@ -4,6 +4,8 @@
 
 var app = angular.module ($appId, $dependencies);
 
-appConfig(function($stateProvide, $urlRouterProvider){
+app.constant('APP_CONFIG', window.appConfig);
+
+app.config(function($stateProvider, $urlRouterProvider){
 
 });
