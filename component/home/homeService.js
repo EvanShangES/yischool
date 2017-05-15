@@ -3,4 +3,5 @@
  */
 angular.module('yixue.home').controller('homeController', function(){
 
+    console.log('does this displya?')
 });

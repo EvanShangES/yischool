@@ -1,10 +1,16 @@
-/**
- * Created by Evan Shang on 2017-05-10.
- */
+/******************************************************************************
+ * Configurations : Application
+ ******************************************************************************/
+'use strict';
 
 var appConfig = window.appConfig || {};
 
 window.appConfig = appConfig;
+
+/******************************************************************************
+ * Configurations : Components and Dependencies
+ ******************************************************************************/
+'use strict';
 
 var $appId = 'yixue';
 
@@ -18,3 +24,4 @@ var $components = [
 ];
 
 $dependencies = $dependencies.concat($components);
+
