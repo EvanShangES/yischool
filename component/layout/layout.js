@@ -15,6 +15,6 @@ angular.module('yixue.layout', ['ui.router'])
                     }
                 }
 
-    });
-        $urlRouterProvider.otherwise('/home/general');
+            });
+        $urlRouterProvider.otherwise('/home');
     });
