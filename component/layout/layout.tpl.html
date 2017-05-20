@@ -3,21 +3,22 @@
         <img class="navbar-brand" src="resources/images/Logo.png" style="height: 100px;width: auto">
     </div>
 
-    <!--<ul class="nav navbar-nav navbar-right" style="padding-right: 20px">-->
-        <!--<li><a href="#">从这儿开始</a></li>-->
-        <!--<li><a href="#">Tab 2</a></li>-->
-        <!--<li><a href="#">Tab 3</a></li>-->
-        <!--<li><a href="#">Tab 4</a></li>-->
-        <!--<li><a href="#">Tab 5</a></li>-->
-        <!--<li><a href="#">Tab 6</a></li>-->
-        <!--<li><a href="#">Tab 7</a></li>-->
-        <!--<li><a href="#">Tab 8</a></li>-->
-        <!--<li><a href="#">Tab 9</a></li>-->
-    <!--</ul>-->
+    <ul class="nav navbar-nav navbar-right" style="padding-right: 20px">
+        <li><a ui-sref="yixue.start_here">从这儿开始</a></li>
+        <li><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3</a></li>
+        <li><a href="#">Tab 4</a></li>
+        <li><a href="#">Tab 5</a></li>
+        <li><a href="#">Tab 6</a></li>
+        <li><a href="#">Tab 7</a></li>
+        <li><a href="#">Tab 8</a></li>
+        <li><a href="#">Tab 9</a></li>
+        <li><a ui-sref="yixue.auth({type:'signup'})">Sign up</a></li>
+        <li><a data-ng-click="openLoginModal()">Login</a></li>
+    </ul>
 
     <ul class="nav navbar-nav navbar-right" style="padding-left: 30px">
-        <li><a href="#">Sign up</a></li>
-        <li><a href="#">Login</a></li>
+
     </ul>
     <!--<ul class="nav navbar-nav navbar-right" style="padding-right: 10px">-->
         <!--<li class="dropdown">-->
@@ -32,6 +33,41 @@
         <!--</li>-->
     <!--</ul>-->
 </nav>
+
+<div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" style="color: black">&times;</button>
+                <h4 class="modal-title">Please log in to Yixue</h4>
+            </div>
+            <div class="modal-body" style="text-align: left">
+                <div style="align-content: center">
+                    <input id="signupEmail" type="email"
+                           class="form-control"
+                           placeholder="Username/Email/QQ/WeChat" style="margin-bottom: 5px"/>
+
+                    <input id="loginPassword" type="email"
+                           class="form-control"
+                           placeholder="Password" style="margin-bottom: 5px"/>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!--<button data-ng-click="saveDevice()"></button>-->
+                <!--<button  data-ng-click="connectSerial()" type="button" class="btn btn-primary"><i class="fa fa-circle"></i> Connect Device</button>-->
+                <!--<button  data-ng-click="startStreamData()" type="button" class="btn btn-primary"><i class="fa fa-circle"></i> Send Data</button>-->
+                <!--<button  data-ng-click="disconnect()" type="button" class="btn btn-primary"><i class="fa fa-circle"></i> Disconnect</button>-->
+                <button id='startRecordBtn' data-ng-click="" type="button" class="btn btn-primary"><i class=""></i>Login</button>
+                <!--<button type="button" data-ng-click="cancelRecord()" class="btn btn-primary" data-dismiss="modal">Close</button>-->
+
+            </div>
+        </div>
+        <!-- Modal content-->
+
+    </div>
+</div>
+
 
 
 <div data-smart-router-animation-wrap="content content@yixue" data-wrap-for="#content">

@@ -20,7 +20,9 @@ var $dependencies = [
 
 var $components = [
     'yixue.layout',
-    'yixue.home'
+    'yixue.home',
+    'yixue.auth',
+    'yixue.start_here'
 ];
 
 $dependencies = $dependencies.concat($components);
